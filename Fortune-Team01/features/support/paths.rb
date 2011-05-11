@@ -15,6 +15,9 @@ module NavigationHelpers
 
 	when /fortunes/i
 		'/fortune/random/'
+		
+	when /fortunes/([0-9]*)
+		'/fortune/get/$1'
 	  
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
