@@ -1,7 +1,6 @@
 require 'sinatra/base'
 require 'haml'
 require 'thin'
-require 'fortunedata'
 
 class Fortune < Sinatra::Base
 	get '/fortune/random/?' do
@@ -9,3 +8,4 @@ class Fortune < Sinatra::Base
 		haml :fortune
 	end
 end
+require 'fortunedata'
